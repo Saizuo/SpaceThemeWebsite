@@ -7,6 +7,7 @@
 
 ::-webkit-scrollbar{
     width: 10px;
+    height: 10px;
 }
 
 ::-webkit-scrollbar-track{
@@ -63,22 +64,25 @@ p{
 .page-links a, .external-links i{
     color: var(--primary-color);
 }
+
 .page-links a:hover, .external-links i:hover{
     color: var(--secondary-color);
 }
+
 #profile{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 40%;
 }
 #profile-header{
-    width: 500px;
+    width: 100%;
 }
 
 #profile-role{
     font-family: 'JetBrains Mono';
-    font-size: 2em;
+    font-size: 2.5vw;
     /* width: 500px; */
     /* text-align: justify; */
     color: var(--secondary-color);
@@ -87,6 +91,21 @@ p{
 #fullpage{
     width: 90%;
     margin: auto;
+}
+
+#comet {
+    width: 20%;
+    position: absolute;
+    top: 25%;
+    transform: rotate(45deg);
+}
+
+#saturn {
+    width: 20%;
+    position: absolute;
+    top: 35%;
+    /* transform: rotate(45deg); */
+    right: 5%;
 }
 
 .page-links a, .external-links a{
