@@ -3,6 +3,7 @@
     --secondary-color: #eeeeee;
     --tertiary-color: #222831;
     --subheading-font: 'Bebas Neue', cursive;
+    --nav-bar-height: 100px;
 }
 
 ::-webkit-scrollbar{
@@ -32,8 +33,9 @@ body{
 }
 
 section{
-    min-height: 100vh;
-    padding-top: 120px;
+    min-height: calc(100vh - var(--nav-bar-height));
+    padding: 0px;
+    border: 1px solid red;
 }
 
 nav{
@@ -41,11 +43,12 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 3%;
+    padding: 0px 3%;
+    min-height: var(--nav-bar-height);
     position: fixed;
     width: 100%;
     z-index: 1;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 h1{
@@ -75,49 +78,50 @@ p{
     color: var(--secondary-color);
 }
 
-#home{
-    width: 100%;
-    height: 100vh;
+#nav-bar-space{
+    min-height: 100px;
+}
+
+#Home{
+    overflow: hidden;
+    position: relative;
+}
+
+#home-container{
+    position: absolute;
+    /* left: 50%; */
+    margin: auto;
+    border: 1px solid black;
 }
 
 #profile{
-    /* position: absolute; */
-    /* top: 50%;
-    left: 50%; */
-    /* transform: translate(-50%, -50%); */
-    text-align: center;
-    width: 40%;
+
 }
+
 #profile-header{
-    width: 100%;
+    width: 50vw;
 }
 
 #profile-role{
     font-family: 'JetBrains Mono';
-    font-size: 2vw;
-    /* width: 500px; */
-    /* text-align: justify; */
+    font-size: 3.22vw;
     color: var(--secondary-color);
 }
 
-#fullpage{
+#site-content{
     width: 80%;
     margin: auto;
+    overflow: hidden;
 }
 
 #comet {
     width: 20%;
-    position: absolute;
-    top: 25%;
     transform: rotate(45deg);
 }
 
 #saturn {
     width: 20%;
-    position: absolute;
-    top: 35%;
-    /* transform: rotate(45deg); */
-    right: 5%;
+    margin: auto;
 }
 
 .page-links a, .external-links a{
