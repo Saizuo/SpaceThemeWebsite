@@ -75,11 +75,17 @@ p{
     color: var(--secondary-color);
 }
 
+#home{
+    width: 100%;
+    height: 100vh;
+}
+
 #profile{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    text-align: center;
     width: 40%;
 }
 #profile-header{
@@ -88,14 +94,14 @@ p{
 
 #profile-role{
     font-family: 'JetBrains Mono';
-    font-size: 2.5vw;
+    font-size: 2vw;
     /* width: 500px; */
     /* text-align: justify; */
     color: var(--secondary-color);
 }
 
 #fullpage{
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 
