@@ -34,8 +34,6 @@ body{
 
 section{
     min-height: calc(100vh - var(--nav-bar-height));
-    padding: 0px;
-    border: 1px solid red;
 }
 
 nav{
@@ -87,15 +85,11 @@ p{
     position: relative;
 }
 
-#home-container{
-    position: absolute;
-    /* left: 50%; */
-    margin: auto;
-    border: 1px solid black;
-}
-
 #profile{
-
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #profile-header{
@@ -104,7 +98,7 @@ p{
 
 #profile-role{
     font-family: 'JetBrains Mono';
-    font-size: 3.22vw;
+    font-size: 3.2vw;
     color: var(--secondary-color);
 }
 
@@ -116,12 +110,16 @@ p{
 
 #comet {
     width: 20%;
+    position: absolute;
+    top: 25%;
     transform: rotate(45deg);
 }
 
 #saturn {
     width: 20%;
-    margin: auto;
+    position: absolute;
+    top: 35%;
+    right: 5%;
 }
 
 .page-links a, .external-links a{
