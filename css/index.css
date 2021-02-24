@@ -251,8 +251,14 @@ p{
     font-size: 2em;
 }
 
-.contact-info{
+.contact-container{
+    display: flex;
+    justify-content:space-around;
+    width: 60%;
     margin: auto;
+}
+
+.contact-info{
     width: fit-content;
 }
 
