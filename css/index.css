@@ -120,6 +120,7 @@ p{
     position: absolute;
     top: 35%;
     right: 5%;
+    /* transform: translateX(100px); */
 }
 
 .page-links a, .external-links a{
