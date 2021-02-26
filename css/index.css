@@ -121,18 +121,16 @@ p{
 }
 
 #comet {
-    width: 20%;
+    width: 12%;
     position: absolute;
     top: 25%;
-    transform: rotate(45deg);
 }
 
 #saturn {
-    width: 20%;
+    width: 30%;
     position: absolute;
     top: 35%;
     right: 5%;
-    /* transform: translateX(100px); */
 }
 
 .page-links a, .external-links a{
