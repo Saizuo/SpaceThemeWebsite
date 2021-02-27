@@ -6,6 +6,12 @@
     --nav-bar-height: 100px;
 }
 
+@media (max-width: 650px){
+    :root{
+        --nav-bar-height: 50px;
+    }
+}
+
 ::-webkit-scrollbar{
     width: 10px;
     height: 10px;
@@ -34,6 +40,15 @@ body{
 
 section{
     min-height: calc(100vh - var(--nav-bar-height));
+    position: relative;
+}
+
+@media (max-width: 1024px){
+    section{
+        /* height: fit-content; */
+        /* position: relative; */
+        /* background-color: red; */
+    }
 }
 
 nav{
@@ -68,22 +83,25 @@ p{
     font-family: 'Rubik', sans-serif;
 }
 
-.page-links a, .external-links i{
+.page-links li a, .external-links i{
     color: var(--primary-color);
+    font-size: 32px;
 }
 
-.page-links a:hover, .external-links i:hover{
+.page-links li, .external-links li {
+    display: inline-block;
+}
+
+.page-links li a:hover, .external-links i:hover{
     color: var(--secondary-color);
 }
 
 #nav-bar-space{
-    min-height: 100px;
+    min-height: var(--nav-bar-height);
 }
 
-@media (max-width: 1000px){
-    #nav-bar-logo{
-        display: none;
-    }
+#About, #Skills, #Projects, #Contact{
+    padding-top: var(--nav-bar-height);
 }
 
 #Home{
@@ -114,46 +132,85 @@ p{
     overflow: hidden;
 }
 
+@media (max-width: 1024px){
+    #site-content{
+        width: 90%;
+    }
+}
+
 #stars{
     position: absolute;
-    width: 200%;
-    height: 200%;
-    left: -600px;
-    top: -300px;
-    border: 1px solid red;
+    width: 100vw;
+    height: 100vh;
     background-image: url("/img/stars.svg");
-    background-size: 600px 300px;
-    /* background-repeat: repeat; */
+    background-size: 200px;
 }
 
 #comet {
     width: 12%;
     position: absolute;
-    top: 25%;
+    top: 60%;
 }
 
 #saturn {
     width: 30%;
     position: absolute;
-    top: 35%;
+    top: 15%;
     right: 5%;
+}
+
+@media (min-width: 1025px){
+    #static{
+        display: none;
+    }
+}
+
+@media (max-width: 1024px){
+    #nav-bar-logo{
+        display: none;
+    }
+
+    #parallax{
+        display: none;
+    }
+
+    #profile-header{
+        width: 80vw;
+    }
+    
+    #profile-role{
+        font-family: 'JetBrains Mono';
+        font-size: 5vw;
+        color: var(--secondary-color);
+    }
+
+    #comet {
+        width: 15%;
+        position: absolute;
+        top: 70%;
+        left: 10%
+    }
+    
+    #saturn {
+        width: 30%;
+        top: 5%;
+        right: 5%;
+    }
+
 }
 
 .page-links a, .external-links a{
     margin: 0 10px;
 }
+
 .page-links a{
     font-family: var(--subheading-font);
-    font-size: 2em;
+    font-size: 64px;
     text-decoration: none;
 }
 
 .page-links, .external-links {
     list-style: none;
-}
-
-.page-links li, .external-links li {
-    display: inline-block;
 }
 
 .logo {
@@ -164,13 +221,37 @@ p{
     transform: translate(-50%, -50%);
 }
 
+@media (max-width: 650px){
+    .page-links li a, .external-links i{
+        color: var(--primary-color);
+        font-size: 20px;
+    }
+
+    .page-links a, .external-links a{
+        margin: 0 2px;
+    }
+
+    #comet {
+        width: 30%;
+        position: absolute;
+        top: 70%;
+        left: 10%
+    }
+    
+    #saturn {
+        width: 50%;
+        top: 10%;
+        right: 5%;
+    }
+}
+
 .hobbies li{
     margin-left: 40px;
     line-height: 2em;
 }
 
 .about-container, .contact-container{
-    position: relative;
+    /* position: relative; */
     justify-content: center;
     align-items: center;
     display: flex;
@@ -186,6 +267,27 @@ p{
     width: 300px;
     border-radius: 50%;
     border: 10px solid var(--tertiary-color);
+}
+
+@media (max-width: 1024px){
+    .about-container{
+        flex-direction: column-reverse;
+    }
+    
+    .sajid-photo{
+        margin-bottom: 30px;
+    }
+
+    .description{
+        margin: auto;
+        width: 80%;
+    }
+}
+
+@media (max-width: 1024px){
+    .sajid-photo{
+        width: 200px;
+    }
 }
 
 .space-shuttle{
@@ -235,14 +337,38 @@ p{
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.hidden{
-    visibility: hidden;
+
+@media (max-width: 649px){
+    #Skills h1{
+        margin-bottom: 100px;
+    }
+
+    .tiles-container{
+        margin-bottom: 50px;
+    }
+
+    .hidden-mobile{
+        visibility: hidden;
+    }
+
+    .tile{
+        width: 6em;
+        height: 6em;
+    }
+
+    .skill-icon{
+        font-size: 3.5em;
+    }
+}
+
+@media (min-width: 650px) {
+    .hidden-desktop{
+        visibility: hidden;
+    }
 }
 
 .cards{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
     display: flex;
     justify-content: center;
 }
@@ -281,6 +407,26 @@ p{
     font-size: 2em;
 }
 
+@media (max-width: 1024px){
+    .cards{
+        flex-direction: column;
+        position: relative;
+        width: fit-content;
+    }
+
+    .card{
+        width: 50%;
+        margin: 10px auto;
+    }
+
+}
+
+@media (max-width: 650px){
+    .card{
+        width: 80%;
+    }
+}
+
 .contact-container{
     display: flex;
     justify-content:space-around;
@@ -301,4 +447,20 @@ p{
 
 .contact-info p{
     font-size: 1.5em;
+}
+
+@media (max-width: 1024px){
+    .contact-container{
+        flex-direction: column;
+    }
+
+    .contact-info{
+        margin-bottom: 50px;
+        font-size: 15px;
+    }
+
+    .contact-info .external-links i{
+        font-size: 32px;
+        margin-right: 20px;
+    }
 }

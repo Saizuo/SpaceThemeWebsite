@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="2000"
-   height="1000"
-   viewBox="0 0 529.16666 264.58334"
+   width="500"
+   height="500"
+   viewBox="0 0 132.29166 132.29167"
    version="1.1"
    id="svg1512"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
@@ -23,9 +23,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.5"
-     inkscape:cx="1005.8655"
-     inkscape:cy="501.80465"
+     inkscape:zoom="1"
+     inkscape:cx="302.50983"
+     inkscape:cy="321.90646"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -54,117 +54,39 @@
      id="layer1">
     <circle
        style="fill:#eeeeee;stroke-width:2.38125"
-       id="circle866"
-       cx="185.36156"
-       cy="105.26183"
-       r="3.175" />
-    <circle
-       style="fill:#eeeeee;stroke-width:2.38125"
        id="circle894"
-       cx="286.16782"
-       cy="53.932667"
+       cx="121.57603"
+       cy="13.361459"
        r="3.175" />
-    <circle
-       style="fill:#eeeeee;stroke-width:2.97656"
-       id="circle896"
-       cx="62.859482"
-       cy="34.3535"
-       r="3.9687498" />
-    <circle
-       style="fill:#eeeeee;stroke-width:1.5875"
-       id="circle898"
-       cx="29.786566"
-       cy="165.58684"
-       r="2.1166663" />
-    <circle
-       style="fill:#eeeeee;stroke-width:1.5875"
-       id="circle900"
-       cx="64.976151"
-       cy="217.18059"
-       r="2.1166663" />
     <circle
        style="fill:#eeeeee;stroke-width:1.5875"
        id="circle902"
-       cx="256.53448"
-       cy="134.63058"
+       cx="102.52605"
+       cy="116.28437"
        r="2.1166663" />
     <circle
        style="fill:#eeeeee;stroke-width:2.97656"
        id="circle904"
-       cx="215.78865"
-       cy="40.968082"
+       cx="25.796875"
+       cy="30.29479"
        r="3.9687498" />
-    <circle
-       style="fill:#eeeeee;stroke-width:2.38125"
-       id="circle906"
-       cx="416.38153"
-       cy="43.82988"
-       r="3.175" />
     <circle
        style="fill:#eeeeee;stroke-width:2.97656"
-       id="circle908"
-       cx="370.32388"
-       cy="96.720505"
+       id="circle904-8"
+       cx="88.106247"
+       cy="44.185413"
        r="3.9687498" />
     <circle
-       style="fill:#eeeeee;stroke-width:1.5875"
-       id="circle910"
-       cx="280.10767"
-       cy="219.94302"
-       r="2.1166663" />
-    <circle
-       style="fill:#eeeeee;stroke-width:1.5875"
-       id="circle912"
-       cx="406.57962"
-       cy="172.4225"
-       r="2.1166663" />
-    <circle
        style="fill:#eeeeee;stroke-width:2.38125"
-       id="circle914"
-       cx="181.39816"
-       cy="197.99094"
+       id="circle894-0"
+       cx="73.554161"
+       cy="88.635422"
        r="3.175" />
     <circle
        style="fill:#eeeeee;stroke-width:2.38125"
-       id="circle916"
-       cx="371.85443"
-       cy="236.15703"
+       id="circle894-3"
+       cx="22.225"
+       cy="112.44791"
        r="3.175" />
-    <circle
-       style="fill:#eeeeee;stroke-width:2.38125"
-       id="circle918"
-       cx="472.13394"
-       cy="97.337234"
-       r="3.175" />
-    <circle
-       style="fill:#eeeeee;stroke-width:1.5875"
-       id="circle920"
-       cx="468.31888"
-       cy="201.23416"
-       r="2.1166663" />
-    <circle
-       style="fill:#eeeeee;stroke-width:2.38125"
-       id="circle922"
-       cx="323.95972"
-       cy="167.68257"
-       r="3.175" />
-    <circle
-       style="fill:#eeeeee;stroke-width:1.5875"
-       id="circle924"
-       cx="88.528862"
-       cy="105.81893"
-       r="2.1166663" />
-    <circle
-       style="fill:#eeeeee;stroke-width:2.38125"
-       id="circle926"
-       cx="309.741"
-       cy="96.963058"
-       r="3.175" />
-    <circle
-       style="fill:#eeeeee;stroke-width:2.97656"
-       id="circle930"
-       cx="112.07198"
-       cy="173.25975"
-       r="3.9687498" />
   </g>
 </svg>

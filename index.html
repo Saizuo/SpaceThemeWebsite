@@ -155,17 +155,25 @@ cccc::::::::;;;;;;;;;;;;;;;;;,,,,,,,,,,,''''''''''''............',,,,'''''''''''
         </ul>
         <a  id="nav-bar-logo" href="."><img class="logo" src="img/sajid-logo.svg" alt="sajid-logo"></a>
         <ul class="external-links">
-            <li><a href="https://github.com/sajidjahabarali"><i class="fab fa-github fa-2x"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/sajidjahabarali"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
-            <li><a href="https://www.behance.net/sajidjahabarali"><i class="fab fa-behance fa-2x"></i></a></li>
+            <li><a href="https://github.com/sajidjahabarali"><i class="fab fa-github fa-2x ext-icon"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/sajidjahabarali"><i class="fab fa-linkedin-in fa-2x ext-icon"></i></a></li>
+            <li><a href="https://www.behance.net/sajidjahabarali"><i class="fab fa-behance fa-2x ext-icon"></i></a></li>
         </ul>
     </nav>
-    <section id="nav-bar-space"></section>
+    <div id="nav-bar-space"></div>
 
     <section id="Home">
-        <div class="layer" item-speed="0.1" id="stars" alt="stars"></div>
-        <img class="layer" item-speed="0.6" id="comet" src="img/comet.svg" alt="comet-graphic">
-        <img class="layer" item-speed="1.5" id="saturn" src="img/sajid-logo.svg" alt="saturn">
+        <div id="parallax">
+            <div class="layer" item-speed="0.1" id="stars" alt="stars"></div>
+            <img class="layer" item-speed="0.6" id="comet" src="img/comet.svg" alt="comet-graphic">
+            <img class="layer" item-speed="1.5" id="saturn" src="img/sajid-logo.svg" alt="saturn">
+        </div>
+        <div id="static">
+            <div item-speed="0.1" id="stars" alt="stars"></div>
+            <img item-speed="0.6" id="comet" src="img/comet.svg" alt="comet-graphic">
+            <img item-speed="1.5" id="saturn" src="img/sajid-logo.svg" alt="saturn">
+        </div>
+        
         <div id="profile">
             <img src="img/name-header-coloured.svg" alt="Sajid" id="profile-header">
             <b><p id="profile-role"></p></b>
@@ -200,42 +208,45 @@ cccc::::::::;;;;;;;;;;;;;;;;;,,,,,,,,,,,''''''''''''............',,,,'''''''''''
 
         <section id="Skills">
             <h1>My Skills</h1>
-            <div class="tile-rows">
-                <div class="tile-columns">
-                    <div class="tile">
-                        <i class="devicon-python-plain skill-icon"></i>
+            <div class="tiles-container">
+                <div class="tile-rows">
+                    <div class="tile-columns">
+                        <div class="tile hidden-mobile">
+                            <i class="devicon-python-plain skill-icon"></i>
+                        </div>
+                        <div class="tile">
+                            <i class="devicon-inkscape-plain skill-icon"></i>
+                        </div>
+                        <div class="tile hidden-desktop">
+                            <i class="devicon-html5-plain skill-icon"></i>
+                        </div>
                     </div>
-                    <div class="tile">
-                        <i class="devicon-inkscape-plain skill-icon"></i>
+    
+                    <div class="tile-columns">
+                        <div class="tile">
+                            <i class="fab fa-aws fa-5x skill-icon"></i>
+                        </div>
+                        <div class="tile">
+                            <i class="devicon-java-plain skill-icon"></i>
+                        </div>
+                        <div class="tile">
+                            <i class="devicon-react-original skill-icon"></i>
+                        </div>
                     </div>
-                    <div class="tile hidden"></div>
-                </div>
-
-                <div class="tile-columns">
-                    <div class="tile">
-                        <i class="fab fa-aws fa-5x skill-icon"></i>
-                    </div>
-                    <div class="tile">
-                        <i class="devicon-java-plain skill-icon"></i>
-                    </div>
-                    <div class="tile">
-                        <i class="devicon-react-original skill-icon"></i>
-                    </div>
-                </div>
-
-                <div class="tile-columns">
-                    <div class="tile hidden">
-                        <i class="devicon-python-plain skill-icon"></i>
-                    </div>
-                    <div class="tile">
-                        <i class="devicon-mysql-plain skill-icon"></i>
-                    </div>
-                    <div class="tile">
-                        <i class="devicon-html5-plain skill-icon"></i></i>
+    
+                    <div class="tile-columns">
+                        <div class="tile hidden-desktop">
+                            <i class="devicon-python-plain skill-icon"></i>
+                        </div>
+                        <div class="tile">
+                            <i class="devicon-mysql-plain skill-icon"></i>
+                        </div>
+                        <div class="tile hidden-mobile">
+                            <i class="devicon-html5-plain skill-icon"></i></i>
+                        </div>
                     </div>
                 </div>
             </div>
-            
         </section>
 
         <section id="Projects">
@@ -243,7 +254,7 @@ cccc::::::::;;;;;;;;;;;;;;;;;,,,,,,,,,,,''''''''''''............',,,,'''''''''''
             <div class="cards">
                 <div class="card">
                     <div class="card-image-container">
-                        <img class="card-image" src="img/mountain.svg" alt="">
+                        <img class="card-image" src="img/sajid-logo.svg" alt="">
                     </div>
                     <div class="card-text">
                         <h2>My First Portfolio Website</h2>
