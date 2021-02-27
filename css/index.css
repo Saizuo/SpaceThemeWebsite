@@ -80,6 +80,12 @@ p{
     min-height: 100px;
 }
 
+@media (max-width: 1000px){
+    #nav-bar-logo{
+        display: none;
+    }
+}
+
 #Home{
     overflow: hidden;
     position: relative;
