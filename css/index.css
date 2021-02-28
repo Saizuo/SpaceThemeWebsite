@@ -243,7 +243,6 @@ p{
 }
 
 .about-container, .contact-container{
-    /* position: relative; */
     justify-content: center;
     align-items: center;
     display: flex;
@@ -386,7 +385,7 @@ p{
 }
 
 .card-image{
-    width: 200px;
+    height: 90%;
     margin: auto;
 }
 
