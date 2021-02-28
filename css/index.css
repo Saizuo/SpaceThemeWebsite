@@ -43,14 +43,6 @@ section{
     position: relative;
 }
 
-@media (max-width: 1024px){
-    section{
-        /* height: fit-content; */
-        /* position: relative; */
-        /* background-color: red; */
-    }
-}
-
 nav{
     background-color: var(--tertiary-color);
     display: flex;
