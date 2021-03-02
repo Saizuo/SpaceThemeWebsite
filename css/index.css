@@ -32,6 +32,7 @@
     background-color:transparent;
     font-family: 'Rubik', sans-serif;
     color: var(--secondary-color);
+    scroll-behavior: smooth;
 }
 
 body{
